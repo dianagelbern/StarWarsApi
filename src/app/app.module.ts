@@ -12,6 +12,7 @@ import { PersonItemComponent } from './component/person-item/person-item.compone
 import { PersonDetailsComponent } from './component/person-details/person-details.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { MaterialImportsModule } from './modules/material-import.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MaterialImportsModule } from './modules/material-import.module';
     HttpClientModule,
     MatDividerModule,
     MaterialImportsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
