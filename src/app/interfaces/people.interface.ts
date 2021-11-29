@@ -1,4 +1,4 @@
-export interface PeopletResponse {
+export interface PeopleResponse {
     count:    number;
     next:     string;
     previous: null;

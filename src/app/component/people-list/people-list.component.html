@@ -1,4 +1,14 @@
 <div class="contenedor">
+    <mat-form-field appearance="fill">
+        <mat-label>Géneros</mat-label>
+        <mat-select disableRipple [formControl]="genderFormControl">
+            <mat-option value="male">Masculino</mat-option>
+            <mat-option value="female">Femenino</mat-option>
+            <mat-option value="n/a">Robot</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-button color="primary"  (click)="doFilter()">Filtrar</button>
+    <!--{{genderFormControl.value}}-->
     <h1>Personajes Star Wars</h1>
-    <app-person-item *ngFor="let e of people" [person]="e"></app-person-item>
+    <app-person-item *ngFor="let e of listaPersonajesFiltrados" [person]="e"></app-person-item>
 </div>

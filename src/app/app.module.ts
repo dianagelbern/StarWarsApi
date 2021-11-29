@@ -13,6 +13,7 @@ import { PersonDetailsComponent } from './component/person-details/person-detail
 import {MatDividerModule} from '@angular/material/divider';
 import { MaterialImportsModule } from './modules/material-import.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     MatDividerModule,
     MaterialImportsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
